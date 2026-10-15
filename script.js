@@ -1,7 +1,7 @@
-// ====== CONFIGURACIÓN: cambiá estos datos por los reales de Lorena ======
-const WHATSAPP_NUMBER = "5493510000000"; // código país + área + número, sin + ni espacios
+// ====== CONFIGURACIÓN ======
+const WHATSAPP_NUMBER = "5493512144611"; // código país + área + número, sin + ni espacios
 const DEFAULT_MESSAGE = "Hola! Vi la página de Dulce Membrillo y quiero hacer una consulta.";
-// ========================================================================
+// ===========================
 
 // Links de WhatsApp (cada botón con data-item arma su propio mensaje)
 document.querySelectorAll(".js-wa").forEach((link) => {
