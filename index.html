@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dulce Membrillo · Dietética</title>
+  <meta name="description" content="Dulce Membrillo, dietética: frutos secos, semillas, harinas, snacks saludables y más. Pedí por WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav">
+      <a href="#inicio" class="logo">
+        <span class="logo-mark">🍯</span>
+        <span>Dulce Membrillo<small>Dietética</small></span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <nav class="menu" id="menu">
+        <a href="#productos">Productos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#" class="btn btn-small js-wa">Pedí por WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- INICIO -->
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Dietética · Alimentos naturales</p>
+          <h1>Comer rico y sano, <em>más fácil</em>.</h1>
+          <p class="lead">Frutos secos, semillas, harinas, snacks y endulzantes para tu día a día. Elegí lo que necesitás y te lo preparamos.</p>
+          <div class="hero-actions">
+            <a href="#" class="btn js-wa">Hacer un pedido</a>
+            <a href="#productos" class="btn btn-ghost">Ver productos</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <!-- Reemplazá images/hero.jpg por una foto del local o de un producto -->
+          <div class="photo photo-hero">
+            <img src="images/hero.jpg" alt="Productos de Dulce Membrillo" onerror="this.remove()">
+            <span class="photo-fallback">🌰🍯🥜</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section class="strip">
+      <div class="container strip-grid">
+        <div><strong>🌿 Productos seleccionados</strong><span>Calidad que se nota</span></div>
+        <div><strong>⚖️ Por peso</strong><span>Llevás justo lo que necesitás</span></div>
+        <div><strong>💬 Atención personalizada</strong><span>Te asesoramos sin vueltas</span></div>
+        <div><strong>🛵 Pedidos y envíos</strong><span>Consultá tu zona</span></div>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section class="section" id="productos">
+      <div class="container">
+        <p class="eyebrow">Nuestro surtido</p>
+        <h2>Lo que vas a encontrar</h2>
+        <p class="section-lead">Algunas de nuestras categorías. Consultanos por stock y precios del día.</p>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="photo"><img src="images/frutos-secos.jpg" alt="Frutos secos" onerror="this.remove()"><span class="photo-fallback">🥜</span></div>
+            <h3>Frutos secos</h3>
+            <p>Nueces, almendras, castañas, pasas y mix para picar.</p>
+            <a href="#" class="card-link js-wa" data-item="frutos secos">Consultar →</a>
+          </article>
+
+          <article class="card reveal">
+            <div class="photo"><img src="images/semillas.jpg" alt="Semillas" onerror="this.remove()"><span class="photo-fallback">🌻</span></div>
+            <h3>Semillas</h3>
+            <p>Chía, lino, girasol, sésamo y calabaza.</p>
+            <a href="#" class="card-link js-wa" data-item="semillas">Consultar →</a>
+          </article>
+
+          <article class="card reveal">
+            <div class="photo"><img src="images/harinas.jpg" alt="Harinas" onerror="this.remove()"><span class="photo-fallback">🌾</span></div>
+            <h3>Harinas y sin TACC</h3>
+            <p>Integrales, de legumbres y opciones libres de gluten.</p>
+            <a href="#" class="card-link js-wa" data-item="harinas y productos sin TACC">Consultar →</a>
+          </article>
+
+          <article class="card reveal">
+            <div class="photo"><img src="images/snacks.jpg" alt="Snacks saludables" onerror="this.remove()"><span class="photo-fallback">🍫</span></div>
+            <h3>Snacks saludables</h3>
+            <p>Barritas, galletitas, chips y bombones para el antojo.</p>
+            <a href="#" class="card-link js-wa" data-item="snacks saludables">Consultar →</a>
+          </article>
+
+          <article class="card reveal">
+            <div class="photo"><img src="images/endulzantes.jpg" alt="Endulzantes y dulces" onerror="this.remove()"><span class="photo-fallback">🍯</span></div>
+            <h3>Endulzantes y dulces</h3>
+            <p>Miel, stevia, mermeladas y dulces sin azúcar agregada.</p>
+            <a href="#" class="card-link js-wa" data-item="endulzantes y dulces">Consultar →</a>
+          </article>
+
+          <article class="card reveal">
+            <div class="photo"><img src="images/cereales.jpg" alt="Cereales y granolas" onerror="this.remove()"><span class="photo-fallback">🥣</span></div>
+            <h3>Cereales y granolas</h3>
+            <p>Avena, granola, copos y mezclas para arrancar bien el día.</p>
+            <a href="#" class="card-link js-wa" data-item="cereales y granolas">Consultar →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="section section-alt" id="nosotros">
+      <div class="container about-grid">
+        <div class="photo photo-about">
+          <img src="images/local.jpg" alt="El local de Dulce Membrillo" onerror="this.remove()">
+          <span class="photo-fallback">🏡</span>
+        </div>
+        <div>
+          <p class="eyebrow">Quiénes somos</p>
+          <h2>Una dietética de barrio, con buena onda</h2>
+          <p>En Dulce Membrillo creemos que alimentarse bien tiene que ser simple y sabroso. Seleccionamos cada producto con cuidado y te acompañamos a encontrar lo que mejor se adapte a tu rutina, tus gustos y tus necesidades.</p>
+          <p>Pasá por el local o pedinos por WhatsApp: te armamos el pedido a tu medida.</p>
+          <a href="#contacto" class="btn">Cómo encontrarnos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <p class="eyebrow">Contacto</p>
+        <h2>Te esperamos</h2>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>📍 Dirección</h3>
+            <p>[Calle y número], [Ciudad]</p>
+          </div>
+          <div class="contact-card">
+            <h3>🕒 Horarios</h3>
+            <p>Lunes a viernes: 9 a 13 y 17 a 21<br>Sábados: 9 a 13</p>
+          </div>
+          <div class="contact-card">
+            <h3>💬 WhatsApp</h3>
+            <p><a href="#" class="js-wa">Escribinos acá</a></p>
+          </div>
+          <div class="contact-card">
+            <h3>📷 Instagram</h3>
+            <p><a href="https://www.instagram.com/dulce.membrillodietetica/" target="_blank" rel="noopener">@dulce.membrillodietetica</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Dulce Membrillo · Dietética</span>
+      <a href="https://www.instagram.com/dulce.membrillodietetica/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </footer>
+
+  <a href="#" class="wa-float js-wa" aria-label="Escribinos por WhatsApp">💬</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
