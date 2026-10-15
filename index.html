@@ -1,326 +1,177 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es-AR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Dulce Membrillo · Tienda saludable</title>
-    <meta
-      name="description"
-      content="Dulce Membrillo, tu tienda saludable de confianza: productos a granel, suplementos, barritas y más. Pedí por WhatsApp."
-    />
-    <meta name="theme-color" content="#1f3d35" />
-    <link rel="icon" href="images/logo.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Nunito:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container nav">
-        <a href="#inicio" class="logo">
-          <img
-            class="logo-mark"
-            src="images/logo.png"
-            alt="Logo de Dulce Membrillo"
-          />
-          <span>Dulce Membrillo<small>Tienda saludable</small></span>
-        </a>
-        <button
-          class="menu-btn"
-          id="menuBtn"
-          aria-label="Abrir menú"
-          aria-expanded="false"
-        >
-          ☰
-        </button>
-        <nav class="menu" id="menu">
-          <a href="#productos">Productos</a>
-          <a href="#nosotros">Nosotros</a>
-          <a href="#contacto">Contacto</a>
-          <a href="#" class="btn btn-small js-wa">Pedí por WhatsApp</a>
-        </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dulce Membrillo · Tienda saludable</title>
+  <meta name="description" content="Dulce Membrillo, tu tienda saludable de confianza: productos a granel, suplementos, barritas y más. Pedí por WhatsApp.">
+  <meta name="theme-color" content="#1f3d35">
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav">
+      <a href="#inicio" class="logo">
+        <img class="logo-mark" src="images/logo.png" alt="Logo de Dulce Membrillo" width="46" height="46">
+        <span>Dulce Membrillo<small>Tienda saludable</small></span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <nav class="menu" id="menu">
+        <a href="#productos">Productos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#" class="btn btn-small js-wa">Pedí por WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- INICIO -->
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Dietética · Córdoba</p>
+          <h1>Tu tienda saludable <em>de confianza</em>.</h1>
+          <p class="lead">Productos a granel, suplementos, barritas, harinas y mucho más para tu día a día. Pasá por el local o hacé tu pedido por WhatsApp.</p>
+          <p class="tagline">Y también te hacemos reír :)</p>
+          <div class="hero-actions">
+            <a href="#" class="btn js-wa">Hacer un pedido</a>
+            <a href="#productos" class="btn btn-ghost">Ver productos</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <!-- Reemplazá images/hero.jpg por una foto del local o de un producto -->
+          <div class="photo photo-hero">
+            <img src="images/hero.jpg" alt="Dulce Membrillo, tienda saludable" onerror="this.onerror=null;this.src='images/logo.png';this.classList.add('is-logo')">
+            <span class="photo-fallback">🌿</span>
+          </div>
+        </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <!-- INICIO -->
-      <section class="hero" id="inicio">
-        <div class="container hero-grid">
-          <div class="hero-text">
-            <p class="eyebrow">Dietética · Córdoba</p>
-            <h1>Tu tienda saludable <em>de confianza</em>.</h1>
-            <p class="lead">
-              Productos a granel, suplementos, barritas, harinas y mucho más
-              para tu día a día. Pasá por el local o hacé tu pedido por
-              WhatsApp.
-            </p>
-            <p class="tagline">Y también te hacemos reír :)</p>
-            <div class="hero-actions">
-              <a href="#" class="btn js-wa">Hacer un pedido</a>
-              <a href="#productos" class="btn btn-ghost">Ver productos</a>
-            </div>
-          </div>
-          <div class="hero-media">
-            <!-- Reemplazá images/hero.jpg por una foto del local o de un producto -->
-            <div class="photo photo-hero">
-              <img
-                src="images/hero.jpg"
-                alt="Dulce Membrillo, tienda saludable"
-                onerror="
-                  this.onerror = null;
-                  this.src = 'images/logo.png';
-                  this.classList.add('is-logo');
-                "
-              />
-              <span class="photo-fallback">🌿</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- BENEFICIOS -->
-      <section class="strip">
-        <div class="container strip-grid">
-          <div>
-            <strong>🌿 Productos seleccionados</strong
-            ><span>Calidad que se nota</span>
-          </div>
-          <div>
-            <strong>⚖️ Productos a granel</strong
-            ><span>Llevás justo lo que necesitás</span>
-          </div>
-          <div>
-            <strong>💬 Atención personalizada</strong
-            ><span>Te asesoramos sin vueltas</span>
-          </div>
-          <div>
-            <strong>🎁 Promos y sorteos</strong
-            ><span>Seguinos en Instagram</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- PRODUCTOS -->
-      <section class="section" id="productos">
-        <div class="container">
-          <p class="eyebrow">Nuestro surtido</p>
-          <h2>Lo que vas a encontrar</h2>
-          <p class="section-lead">
-            Algunas de nuestras categorías. Consultanos por stock y precios del
-            día.
-          </p>
-
-          <div class="cards">
-            <article class="card reveal">
-              <div class="photo">
-                <img
-                  src="images/granel.jpg"
-                  alt="Productos a granel"
-                  onerror="this.remove()"
-                /><span class="photo-fallback">🥜</span>
-              </div>
-              <h3>Frutos secos y granel</h3>
-              <p>
-                Frutos secos, semillas, cereales y más, por el peso que
-                necesites.
-              </p>
-              <a href="#" class="card-link js-wa" data-item="productos a granel"
-                >Consultar →</a
-              >
-            </article>
-
-            <article class="card reveal">
-              <div class="photo">
-                <img
-                  src="images/suplementos.jpg"
-                  alt="Suplementos"
-                  onerror="this.remove()"
-                /><span class="photo-fallback">💊</span>
-              </div>
-              <h3>Suplementos</h3>
-              <p>
-                Suplementos dietarios para acompañar tu rutina. Te asesoramos en
-                el local.
-              </p>
-              <a href="#" class="card-link js-wa" data-item="suplementos"
-                >Consultar →</a
-              >
-            </article>
-
-            <article class="card reveal">
-              <div class="photo">
-                <img
-                  src="images/snacks.jpg"
-                  alt="Barritas y snacks"
-                  onerror="this.remove()"
-                /><span class="photo-fallback">🍫</span>
-              </div>
-              <h3>Barritas y snacks</h3>
-              <p>
-                Barritas, galletitas y snacks saludables para cuando te pega el
-                antojo.
-              </p>
-              <a href="#" class="card-link js-wa" data-item="barritas y snacks"
-                >Consultar →</a
-              >
-            </article>
-
-            <article class="card reveal">
-              <div class="photo">
-                <img
-                  src="images/harinas.jpg"
-                  alt="Harinas"
-                  onerror="this.remove()"
-                /><span class="photo-fallback">🌾</span>
-              </div>
-              <h3>Harinas y sin TACC</h3>
-              <p>Integrales, de legumbres y opciones libres de gluten.</p>
-              <a
-                href="#"
-                class="card-link js-wa"
-                data-item="harinas y productos sin TACC"
-                >Consultar →</a
-              >
-            </article>
-
-            <article class="card reveal">
-              <div class="photo">
-                <img
-                  src="images/endulzantes.jpg"
-                  alt="Endulzantes y dulces"
-                  onerror="this.remove()"
-                /><span class="photo-fallback">🍯</span>
-              </div>
-              <h3>Endulzantes y dulces</h3>
-              <p>Miel, stevia, mermeladas y dulces sin azúcar agregada.</p>
-              <a
-                href="#"
-                class="card-link js-wa"
-                data-item="endulzantes y dulces"
-                >Consultar →</a
-              >
-            </article>
-
-            <article class="card reveal">
-              <div class="photo">
-                <img
-                  src="images/promos.jpg"
-                  alt="Promos y sorteos"
-                  onerror="this.remove()"
-                /><span class="photo-fallback">🎁</span>
-              </div>
-              <h3>Promos y sorteos</h3>
-              <p>
-                Enterate de las promos del momento y participá de los sorteos en
-                Instagram.
-              </p>
-              <a
-                href="https://www.instagram.com/dulce.membrillodietetica/"
-                class="card-link"
-                target="_blank"
-                rel="noopener"
-                >Ver en Instagram →</a
-              >
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- NOSOTROS -->
-      <section class="section section-alt" id="nosotros">
-        <div class="container about-grid">
-          <div class="photo photo-about">
-            <img
-              src="images/local.jpg"
-              alt="El local de Dulce Membrillo"
-              onerror="this.remove()"
-            />
-            <span class="photo-fallback">🏡</span>
-          </div>
-          <div>
-            <p class="eyebrow">Quiénes somos</p>
-            <h2>Tu tienda saludable de confianza</h2>
-            <p>
-              En Dulce Membrillo creemos que alimentarse bien tiene que ser
-              simple y sabroso. Seleccionamos cada producto con cuidado y te
-              acompañamos a encontrar lo que mejor se adapte a tu rutina, tus
-              gustos y tus necesidades.
-            </p>
-            <p>
-              Pasá por el local o escribinos por WhatsApp: te armamos el pedido
-              a tu medida. Y si nos seguís en Instagram, además de promos te vas
-              a llevar alguna risa.
-            </p>
-            <a href="#contacto" class="btn">Cómo encontrarnos</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- CONTACTO -->
-      <section class="section" id="contacto">
-        <div class="container">
-          <p class="eyebrow">Contacto</p>
-          <h2>Te esperamos</h2>
-          <div class="contact-grid">
-            <div class="contact-card">
-              <h3>📍 Dirección</h3>
-              <p>Jorge Luis Borges 750<br />Córdoba, CP 5151</p>
-              <p>
-                <a
-                  href="https://www.google.com/maps/search/?api=1&query=Jorge+Luis+Borges+750+5151+Cordoba+Argentina"
-                  target="_blank"
-                  rel="noopener"
-                  >Cómo llegar</a
-                >
-              </p>
-            </div>
-            <div class="contact-card">
-              <h3>🕒 Horarios</h3>
-              <p>Consultá nuestros horarios por WhatsApp o Instagram.</p>
-            </div>
-            <div class="contact-card">
-              <h3>💬 WhatsApp</h3>
-              <p>+54 9 351 214-4611</p>
-              <p><a href="#" class="js-wa">Escribinos acá</a></p>
-            </div>
-            <div class="contact-card">
-              <h3>📷 Instagram</h3>
-              <p>
-                <a
-                  href="https://www.instagram.com/dulce.membrillodietetica/"
-                  target="_blank"
-                  rel="noopener"
-                  >@dulce.membrillodietetica</a
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container footer-inner">
-        <span
-          >© <span id="year"></span> Dulce Membrillo · Tienda saludable</span
-        >
-        <a
-          href="https://www.instagram.com/dulce.membrillodietetica/"
-          target="_blank"
-          rel="noopener"
-          >Instagram</a
-        >
+    <!-- BENEFICIOS -->
+    <section class="strip">
+      <div class="container strip-grid">
+        <div><strong>🌿 Productos seleccionados</strong><span>Calidad que se nota</span></div>
+        <div><strong>⚖️ Productos a granel</strong><span>Llevás justo lo que necesitás</span></div>
+        <div><strong>💬 Atención personalizada</strong><span>Te asesoramos sin vueltas</span></div>
+        <div><strong>🎁 Promos y sorteos</strong><span>Seguinos en Instagram</span></div>
       </div>
-    </footer>
+    </section>
 
-    <a href="#" class="wa-float js-wa" aria-label="Escribinos por WhatsApp"
-      >💬</a
-    >
+    <!-- PRODUCTOS -->
+    <section class="section" id="productos">
+      <div class="container">
+        <p class="eyebrow">Nuestro surtido</p>
+        <h2>Lo que vas a encontrar</h2>
+        <p class="section-lead">Algunas de nuestras categorías. Consultanos por stock y precios del día.</p>
 
-    <script src="script.js"></script>
-  </body>
+        <div class="cards">
+          <article class="card reveal">
+            <div class="photo"><img src="images/granel.jpg" alt="Productos a granel" onerror="this.remove()"><span class="photo-fallback">🥜</span></div>
+            <h3>Frutos secos y granel</h3>
+            <p>Frutos secos, semillas, cereales y más, por el peso que necesites.</p>
+            <a href="#" class="card-link js-wa" data-item="productos a granel">Consultar →</a>
+          </article>
+
+          <article class="card reveal">
+            <div class="photo"><img src="images/suplementos.jpg" alt="Suplementos" onerror="this.remove()"><span class="photo-fallback">💊</span></div>
+            <h3>Suplementos</h3>
+            <p>Suplementos dietarios para acompañar tu rutina. Te asesoramos en el local.</p>
+            <a href="#" class="card-link js-wa" data-item="suplementos">Consultar →</a>
+          </article>
+
+          <article class="card reveal">
+            <div class="photo"><img src="images/snacks.jpg" alt="Barritas y snacks" onerror="this.remove()"><span class="photo-fallback">🍫</span></div>
+            <h3>Barritas y snacks</h3>
+            <p>Barritas, galletitas y snacks saludables para cuando te pega el antojo.</p>
+            <a href="#" class="card-link js-wa" data-item="barritas y snacks">Consultar →</a>
+          </article>
+
+          <article class="card reveal">
+            <div class="photo"><img src="images/harinas.jpg" alt="Harinas" onerror="this.remove()"><span class="photo-fallback">🌾</span></div>
+            <h3>Harinas y sin TACC</h3>
+            <p>Integrales, de legumbres y opciones libres de gluten.</p>
+            <a href="#" class="card-link js-wa" data-item="harinas y productos sin TACC">Consultar →</a>
+          </article>
+
+          <article class="card reveal">
+            <div class="photo"><img src="images/endulzantes.jpg" alt="Endulzantes y dulces" onerror="this.remove()"><span class="photo-fallback">🍯</span></div>
+            <h3>Endulzantes y dulces</h3>
+            <p>Miel, stevia, mermeladas y dulces sin azúcar agregada.</p>
+            <a href="#" class="card-link js-wa" data-item="endulzantes y dulces">Consultar →</a>
+          </article>
+
+          <article class="card reveal">
+            <div class="photo"><img src="images/promos.jpg" alt="Promos y sorteos" onerror="this.remove()"><span class="photo-fallback">🎁</span></div>
+            <h3>Promos y sorteos</h3>
+            <p>Enterate de las promos del momento y participá de los sorteos en Instagram.</p>
+            <a href="https://www.instagram.com/dulce.membrillodietetica/" class="card-link" target="_blank" rel="noopener">Ver en Instagram →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="section section-alt" id="nosotros">
+      <div class="container about-grid">
+        <div class="photo photo-about">
+          <img src="images/local.jpg" alt="El local de Dulce Membrillo" onerror="this.remove()">
+          <span class="photo-fallback">🏡</span>
+        </div>
+        <div>
+          <p class="eyebrow">Quiénes somos</p>
+          <h2>Tu tienda saludable de confianza</h2>
+          <p>En Dulce Membrillo creemos que alimentarse bien tiene que ser simple y sabroso. Seleccionamos cada producto con cuidado y te acompañamos a encontrar lo que mejor se adapte a tu rutina, tus gustos y tus necesidades.</p>
+          <p>Pasá por el local o escribinos por WhatsApp: te armamos el pedido a tu medida. Y si nos seguís en Instagram, además de promos te vas a llevar alguna risa.</p>
+          <a href="#contacto" class="btn">Cómo encontrarnos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <p class="eyebrow">Contacto</p>
+        <h2>Te esperamos</h2>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>📍 Dirección</h3>
+            <p>Jorge Luis Borges 750<br>Córdoba, CP 5151</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=Jorge+Luis+Borges+750+5151+Cordoba+Argentina" target="_blank" rel="noopener">Cómo llegar</a></p>
+          </div>
+          <div class="contact-card">
+            <h3>🕒 Horarios</h3>
+            <p>Consultá nuestros horarios por WhatsApp o Instagram.</p>
+          </div>
+          <div class="contact-card">
+            <h3>💬 WhatsApp</h3>
+            <p>+54 9 351 214-4611</p>
+            <p><a href="#" class="js-wa">Escribinos acá</a></p>
+          </div>
+          <div class="contact-card">
+            <h3>📷 Instagram</h3>
+            <p><a href="https://www.instagram.com/dulce.membrillodietetica/" target="_blank" rel="noopener">@dulce.membrillodietetica</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Dulce Membrillo · Tienda saludable</span>
+      <a href="https://www.instagram.com/dulce.membrillodietetica/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </footer>
+
+  <a href="#" class="wa-float js-wa" aria-label="Escribinos por WhatsApp">💬</a>
+
+  <script src="script.js"></script>
+</body>
 </html>
